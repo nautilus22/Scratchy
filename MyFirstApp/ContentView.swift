@@ -136,9 +136,13 @@ struct BackScratchingScreen: View {
     
     var body: some View {
         VStack(spacing: 20) {
-            Text("여기가 가려워...")
-                .font(.largeTitle)
-                .fontWeight(.bold)
+            VStack {
+                Text("여기가 가려워...")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+            }
+            .offset(y: 80)
+            
             Spacer()
             // 동물 이미지 영역 (배경색 적용)
             ZStack {
@@ -217,7 +221,7 @@ struct AnimalCard: View {
     @State private var isPressed = false
     
     var body: some View {
-        VStack(spacing: 15) {
+        VStack(spacing: 6) {
             // 동물 뒷모습 이미지 또는 기본 아이콘
             ZStack {
                 if let uiImage = UIImage(named: animal.backImageName) {

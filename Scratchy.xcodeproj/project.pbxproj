@@ -24,9 +24,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4878A0A62E0FC05B0071E57F /* MyFirstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFirstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4878A0B32E0FC05C0071E57F /* MyFirstAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFirstAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4878A0BD2E0FC05C0071E57F /* MyFirstAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFirstAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4878A0A62E0FC05B0071E57F /* Scratchy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scratchy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4878A0B32E0FC05C0071E57F /* ScratchyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScratchyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4878A0BD2E0FC05C0071E57F /* ScratchyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScratchyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -85,9 +85,9 @@
 		4878A0A72E0FC05B0071E57F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4878A0A62E0FC05B0071E57F /* MyFirstApp.app */,
-				4878A0B32E0FC05C0071E57F /* MyFirstAppTests.xctest */,
-				4878A0BD2E0FC05C0071E57F /* MyFirstAppUITests.xctest */,
+				4878A0A62E0FC05B0071E57F /* Scratchy.app */,
+				4878A0B32E0FC05C0071E57F /* ScratchyTests.xctest */,
+				4878A0BD2E0FC05C0071E57F /* ScratchyUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,9 +95,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4878A0A52E0FC05B0071E57F /* MyFirstApp */ = {
+		4878A0A52E0FC05B0071E57F /* Scratchy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4878A0C72E0FC05C0071E57F /* Build configuration list for PBXNativeTarget "MyFirstApp" */;
+			buildConfigurationList = 4878A0C72E0FC05C0071E57F /* Build configuration list for PBXNativeTarget "Scratchy" */;
 			buildPhases = (
 				4878A0A22E0FC05B0071E57F /* Sources */,
 				4878A0A32E0FC05B0071E57F /* Frameworks */,
@@ -110,16 +110,16 @@
 			fileSystemSynchronizedGroups = (
 				4878A0A82E0FC05B0071E57F /* MyFirstApp */,
 			);
-			name = MyFirstApp;
+			name = Scratchy;
 			packageProductDependencies = (
 			);
 			productName = MyFirstApp;
-			productReference = 4878A0A62E0FC05B0071E57F /* MyFirstApp.app */;
+			productReference = 4878A0A62E0FC05B0071E57F /* Scratchy.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4878A0B22E0FC05C0071E57F /* MyFirstAppTests */ = {
+		4878A0B22E0FC05C0071E57F /* ScratchyTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4878A0CA2E0FC05C0071E57F /* Build configuration list for PBXNativeTarget "MyFirstAppTests" */;
+			buildConfigurationList = 4878A0CA2E0FC05C0071E57F /* Build configuration list for PBXNativeTarget "ScratchyTests" */;
 			buildPhases = (
 				4878A0AF2E0FC05C0071E57F /* Sources */,
 				4878A0B02E0FC05C0071E57F /* Frameworks */,
@@ -133,16 +133,16 @@
 			fileSystemSynchronizedGroups = (
 				4878A0B62E0FC05C0071E57F /* MyFirstAppTests */,
 			);
-			name = MyFirstAppTests;
+			name = ScratchyTests;
 			packageProductDependencies = (
 			);
 			productName = MyFirstAppTests;
-			productReference = 4878A0B32E0FC05C0071E57F /* MyFirstAppTests.xctest */;
+			productReference = 4878A0B32E0FC05C0071E57F /* ScratchyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		4878A0BC2E0FC05C0071E57F /* MyFirstAppUITests */ = {
+		4878A0BC2E0FC05C0071E57F /* ScratchyUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4878A0CD2E0FC05C0071E57F /* Build configuration list for PBXNativeTarget "MyFirstAppUITests" */;
+			buildConfigurationList = 4878A0CD2E0FC05C0071E57F /* Build configuration list for PBXNativeTarget "ScratchyUITests" */;
 			buildPhases = (
 				4878A0B92E0FC05C0071E57F /* Sources */,
 				4878A0BA2E0FC05C0071E57F /* Frameworks */,
@@ -156,11 +156,11 @@
 			fileSystemSynchronizedGroups = (
 				4878A0C02E0FC05C0071E57F /* MyFirstAppUITests */,
 			);
-			name = MyFirstAppUITests;
+			name = ScratchyUITests;
 			packageProductDependencies = (
 			);
 			productName = MyFirstAppUITests;
-			productReference = 4878A0BD2E0FC05C0071E57F /* MyFirstAppUITests.xctest */;
+			productReference = 4878A0BD2E0FC05C0071E57F /* ScratchyUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -186,7 +186,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4878A0A12E0FC05B0071E57F /* Build configuration list for PBXProject "MyFirstApp" */;
+			buildConfigurationList = 4878A0A12E0FC05B0071E57F /* Build configuration list for PBXProject "Scratchy" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -200,9 +200,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4878A0A52E0FC05B0071E57F /* MyFirstApp */,
-				4878A0B22E0FC05C0071E57F /* MyFirstAppTests */,
-				4878A0BC2E0FC05C0071E57F /* MyFirstAppUITests */,
+				4878A0A52E0FC05B0071E57F /* Scratchy */,
+				4878A0B22E0FC05C0071E57F /* ScratchyTests */,
+				4878A0BC2E0FC05C0071E57F /* ScratchyUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -258,12 +258,12 @@
 /* Begin PBXTargetDependency section */
 		4878A0B52E0FC05C0071E57F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4878A0A52E0FC05B0071E57F /* MyFirstApp */;
+			target = 4878A0A52E0FC05B0071E57F /* Scratchy */;
 			targetProxy = 4878A0B42E0FC05C0071E57F /* PBXContainerItemProxy */;
 		};
 		4878A0BF2E0FC05C0071E57F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4878A0A52E0FC05B0071E57F /* MyFirstApp */;
+			target = 4878A0A52E0FC05B0071E57F /* Scratchy */;
 			targetProxy = 4878A0BE2E0FC05C0071E57F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -465,7 +465,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyFirstApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MyFirstApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Scratchy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Scratchy";
 			};
 			name = Debug;
 		};
@@ -484,7 +484,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyFirstApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MyFirstApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Scratchy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Scratchy";
 			};
 			name = Release;
 		};
@@ -525,7 +525,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4878A0A12E0FC05B0071E57F /* Build configuration list for PBXProject "MyFirstApp" */ = {
+		4878A0A12E0FC05B0071E57F /* Build configuration list for PBXProject "Scratchy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4878A0C52E0FC05C0071E57F /* Debug */,
@@ -534,7 +534,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4878A0C72E0FC05C0071E57F /* Build configuration list for PBXNativeTarget "MyFirstApp" */ = {
+		4878A0C72E0FC05C0071E57F /* Build configuration list for PBXNativeTarget "Scratchy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4878A0C82E0FC05C0071E57F /* Debug */,
@@ -543,7 +543,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4878A0CA2E0FC05C0071E57F /* Build configuration list for PBXNativeTarget "MyFirstAppTests" */ = {
+		4878A0CA2E0FC05C0071E57F /* Build configuration list for PBXNativeTarget "ScratchyTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4878A0CB2E0FC05C0071E57F /* Debug */,
@@ -552,7 +552,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4878A0CD2E0FC05C0071E57F /* Build configuration list for PBXNativeTarget "MyFirstAppUITests" */ = {
+		4878A0CD2E0FC05C0071E57F /* Build configuration list for PBXNativeTarget "ScratchyUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4878A0CE2E0FC05C0071E57F /* Debug */,
