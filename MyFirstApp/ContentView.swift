@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AudioToolbox
 
 // 동물 모델
 struct Animal: Identifiable {
@@ -60,7 +61,9 @@ struct ContentView: View {
                     )
                 }
             }
+            #if os(iOS)
             .navigationBarHidden(true)
+            #endif
         }
     }
 }
@@ -133,6 +136,8 @@ struct BackScratchingScreen: View {
     let animal: Animal
     let onBack: () -> Void
     @State private var herePosition = CGPoint(x: UIScreen.main.bounds.width / 2, y: 450)
+    @State private var isHerePulsing = false
+    @State private var lastDragTime = Date()
     
     var body: some View {
         VStack(spacing: 20) {
@@ -168,21 +173,38 @@ struct BackScratchingScreen: View {
                             .foregroundColor(.secondary)
                     }
                 }
+                
                 // here asset + "여기!" 텍스트 (드래그 가능)
                 ZStack {
+                    // 배경 원 (펄스 효과)
+                    Circle()
+                        .fill(Color.red.opacity(0.2))
+                        .frame(width: 100, height: 100)
+                        .scaleEffect(isHerePulsing ? 1.2 : 1.0)
+                        .opacity(isHerePulsing ? 0.3 : 0.6)
+                        .animation(.easeInOut(duration: 0.6).repeatForever(autoreverses: true), value: isHerePulsing)
+                    
                     if let hereImage = UIImage(named: "here") {
                         Image(uiImage: hereImage)
                             .resizable()
                             .frame(width: 90, height: 90)
+                            .scaleEffect(isHerePulsing ? 1.05 : 1.0)
+                            .animation(.easeInOut(duration: 0.8).repeatForever(autoreverses: true), value: isHerePulsing)
                     }
+                    
                     Text("여기!")
                         .font(.custom("Chalkboard SE", size: 14))
                         .fontWeight(.bold)
                         .foregroundColor(.black)
                         .offset(y: 15)
+                        .scaleEffect(isHerePulsing ? 1.02 : 1.0)
+                        .animation(.easeInOut(duration: 0.8).repeatForever(autoreverses: true), value: isHerePulsing)
                 }
                 .frame(width: 90, height: 90, alignment: .center)
                 .position(herePosition)
+                .onAppear {
+                    isHerePulsing = true
+                }
                 .gesture(
                     DragGesture()
                         .onChanged { value in
@@ -190,6 +212,15 @@ struct BackScratchingScreen: View {
                                 x: value.startLocation.x + value.translation.width,
                                 y: value.startLocation.y + value.translation.height - 40
                             )
+                        }
+                        .onEnded { _ in
+                            // 드래그 종료 시 햅틱 피드백과 성공음
+                            #if os(iOS)
+                            let impactFeedback = UIImpactFeedbackGenerator(style: .medium)
+                            impactFeedback.impactOccurred()
+                            #endif
+                            
+                            AudioServicesPlaySystemSound(1322) // 성공음
                         }
                 )
             }
